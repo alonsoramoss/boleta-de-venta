@@ -11,7 +11,7 @@ def calcular_subtotal():
     
     return subtotal
 
-def imprimir_factura():
+def imprimir_boleta():
     dni = txt1.get()
     nombre = txt2.get()
     apellido = txt3.get()
@@ -31,7 +31,7 @@ def imprimir_factura():
     txt12.delete(0, END)
     txt12.insert(0, f"{total:.2f}")
     
-    factura_texto = f"""
+    boleta_texto = f"""
     Boleta de Venta
     ----------------------------
     DNI: {dni}
@@ -50,7 +50,7 @@ def imprimir_factura():
     ----------------------------
     TOTAL: {total:.2f}
     """
-    print(factura_texto)
+    print(boleta_texto)
 
 interfaz = Tk()
 interfaz.title("Boleta de Venta")
@@ -105,7 +105,7 @@ txt12.place(x=670, y=410, width=90, height=30)
 lbl_total_nombre = Label(interfaz, text="TOTAL:", fg="Black", bg="white", font=("Verdana", 12))
 lbl_total_nombre.place(x=600, y=410)
 
-btn = Button(interfaz, text="Imprimir Factura", command=imprimir_factura)
+btn = Button(interfaz, text="Imprimir boleta", command=imprimir_boleta)
 btn.place(x=120, y=450)
 
 interfaz.mainloop()
