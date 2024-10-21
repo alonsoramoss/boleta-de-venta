@@ -1,6 +1,6 @@
-# Boleta de Venta con Tkinter
+# Boleta de Venta con Python
 
-Una aplicación para generar boletas de venta utilizando Python y Tkinter. Permite ingresar detalles del cliente y del producto, calcular el subtotal y el total con impuestos, y generar una boleta en formato de texto.
+Esta aplicación permite generar boletas de venta utilizando la biblioteca Tkinter para la interfaz gráfica de usuario. Permite ingresar detalles del cliente y del producto, calcular el subtotal y el total con impuestos, y generar una boleta en formato de texto.
 
 ### Características
 - Interfaz gráfica creada con Tkinter.
